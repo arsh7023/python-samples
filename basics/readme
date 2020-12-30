@@ -1,0 +1,65 @@
+python -c "print('hello')"
+
+In interactive mode, the last printed expression is assigned to the variable _
+
+print("""\
+Usage: thingy [OPTIONS]
+     -h                        Display this usage message
+     -H hostname               Hostname to connect to
+""")
+
+>>> word = 'Python'
+>>> word[0:2]  # characters from position 0 (included) to 2 (excluded)
+'Py'
+>>> word[2:5]  # characters from position 2 (included) to 5 (excluded)
+'tho'
+
+len(word)
+
+
+ +---+---+---+---+---+---+
+ | P | y | t | h | o | n |
+ +---+---+---+---+---+---+
+ 0   1   2   3   4   5   6
+-6  -5  -4  -3  -2  -1
+Note that since -0 is the same as 0, negative indices start from -1.
+
+Note how the start is always included, and the end always excluded. This makes sure that s[:i] + s[i:] is always equal to s:
+>>> word[:2] + word[2:]
+'Python'
+>>> word[:4] + word[4:]
+'Python'
+
+
+letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+letters[2:5] = ['c', 'd', 'e'] => since end always excluded.  from index 2 to index 4 (5 excluded)
+
+len(letters)
+
+print(a, end=',')
+The keyword argument end can be used to avoid the newline after the output, or end the output with a different string:
+
+pip freeze
+pip list
+
+
+//////FLASK
+https://flask.palletsprojects.com/en/1.1.x/quickstart/
+cd myproject
+python3 -m venv venv
+ . venv/bin/activate
+ pip install Flask
+
+
+ $ export FLASK_APP=hello.py
+$ flask run
+
+Alternatively you can use python -m flask:
+python -m flask run
+
+export FLASK_ENV=development
+$ flask run
+
+
+run server
+$ flask run --host=0.0.0.0

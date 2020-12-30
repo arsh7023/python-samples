@@ -1,0 +1,5 @@
+.stroked-instance {
+    stroke: green; /* nothing happens */
+    background-color: red; /* nothing happens */
+    color: aqua;
+}
